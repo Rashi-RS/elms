@@ -1,0 +1,26 @@
+{
+    "name": "elms/employee-leave-management-system",
+    "description": "Production-grade Employee & Leave Management System built with Core PHP, PDO, MySQL, and MVC Architecture",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Software Engineer",
+            "email": "developer@elms.test"
+        }
+    ],
+    "require": {
+        "php": ">=8.2.0",
+        "ext-pdo": "*",
+        "ext-pdo_mysql": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "scripts": {
+        "serve": "php -S localhost:8000 -t public",
+        "db:setup": "php database/setup.php"
+    }
+}
